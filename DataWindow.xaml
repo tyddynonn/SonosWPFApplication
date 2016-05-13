@@ -1,0 +1,15 @@
+﻿<Window x:Class="SonosWpfApplication.DataWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="DataWindow" Height="351" Width="609" Loaded="Window_Loaded">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="262*" />
+            <RowDefinition Height="50" />
+        </Grid.RowDefinitions>
+        <DataGrid AutoGenerateColumns="False" HorizontalAlignment="Stretch" Margin="12,21,22,17" Name="dgItems" VerticalAlignment="Stretch" />
+        <Button Content="Load" Grid.Row="1" Height="23" HorizontalAlignment="Left" Margin="12,8,0,0" Name="btnLoad" VerticalAlignment="Top" Width="75" Click="btnLoad_Click" />
+        <Button Content="Get Dups" Grid.Row="1" Height="23" HorizontalAlignment="Left" Margin="167,11,0,0" Name="btnDups" VerticalAlignment="Top" Width="75" Click="btnDups_Click" />
+        <TextBlock Grid.Row="1" Height="22" HorizontalAlignment="Left" Margin="301,12,0,0" Name="txtNumDups" Text="" VerticalAlignment="Top" Width="139" />
+    </Grid>
+</Window>
